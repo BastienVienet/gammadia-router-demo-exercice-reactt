@@ -1,13 +1,13 @@
 import {useNavigate} from "react-router-dom";
 
-export const Home = () => {
+export const OrderSummary = () => {
     const navigate = useNavigate()
     return (
         <>
             <div>
-                Home Page
+                Order confirmed!
             </div>
-            <button onClick={() => navigate('order-summary')}>Place order</button>
+            <button onClick={() => navigate(-1)}>Go back</button>
         </>
     )
 }
